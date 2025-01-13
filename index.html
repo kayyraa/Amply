@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="scripts/style/format.css">
+        <link rel="stylesheet" href="scripts/style/style.css">
+
+        <script type="module" src="scripts/api.js"></script>
+        <script type="module" src="scripts/hud.js"></script>
+
+        <title>Amply</title>
+    </head>
+    <body>
+        <sidebar>
+            <div>
+                <div function="Dir:Home:click">
+                    <img src="images/Home.svg">
+                    <span>Home</span>
+                </div>
+                <div function="Dir:Search:click">
+                    <img src="images/Search.svg">
+                    <span>Search</span>
+                </div>
+            </div>
+            <div>
+                <div function="Dir:Liked:click">
+                    <img src="images/Liked.svg">
+                    <span>Liked</span>
+                </div>
+                <div function="Dir:Discover:click">
+                    <img src="images/Discover.svg">
+                    <span>Discover</span>
+                </div>
+                <div class="UploadButton">
+                    <img src="images/Upload.svg">
+                    <span>Upload</span>
+                </div>
+            </div>
+        </sidebar>
+        <content>
+            <div href="Home">
+                <header>Home</header>
+                <div>
+                    <div class="Albums">
+                        <div function="Dir:Liked:click">
+                            <img src="images/Liked.svg">
+                            <span>Liked Songs</span>
+                        </div>
+                        <div function="Dir:Discover:click">
+                            <img src="images/Discover.svg">
+                            <span>Discover Songs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div href="Liked">
+                <header>Liked</header>
+                <div class="Table">
+                    <div>
+                        <span>#</span>
+                        <span>Name</span>
+                        <span>Author</span>
+                        <span>Length</span>
+                    </div>
+                    <hr>
+                    <div class="Items"></div>
+                </div>
+            </div>
+            <div href="Discover">
+                <header>Discover</header>
+                <div class="Table">
+                    <div>
+                        <span>#</span>
+                        <span>Name</span>
+                        <span>Author</span>
+                        <span>Length</span>
+                    </div>
+                    <hr>
+                    <div class="Items"></div>
+                </div>
+            </div>
+            <div href="Search">
+                <header>Search</header>
+            </div>
+        </content>
+        <div class="Playback">
+            <div class="Bar"><div class="Fill"></div></div>
+            <div class="Data">
+                <img class="CoverImage" src="images/Note.svg">
+                <div>
+                    <span>Not Playing</span>
+                    <span>-</span>
+                </div>
+            </div>
+            <img class="Previous" src="images/Previous.svg">
+            <img class="Play" src="images/Next.svg">
+            <img class="Next" src="images/Next.svg">
+        </div>
+    </body>
+</html>
