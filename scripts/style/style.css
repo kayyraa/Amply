@@ -1,0 +1,288 @@
+[href="Discover"] > .Table > .Items > div {
+    padding: 4px;
+    border-radius: 8px;
+}
+
+[href="Discover"] > .Table > .Items > div:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+[href="Discover"] > .Table > .Items > div > *:nth-child(3),
+[href="Discover"] > .Table > div:first-child > div > *:nth-child(3) {
+    position: absolute;
+    left: 23.5vw;
+}
+
+[href="Discover"] > .Table > .Items > div > *:nth-child(4),
+[href="Discover"] > .Table > div:first-child > div > *:nth-child(4) {
+    position: absolute;
+    left: 50.75vw;
+}
+
+.Playback {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 7.5em;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+
+    box-sizing: border-box;
+    border-top: 2px solid rgb(60, 60, 60);
+    background-color: rgb(40, 40, 40);
+}
+
+.Playback,
+.Playback * {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    text-wrap: nowrap;
+}
+
+.Playback > img {
+    background-color: rgb(70, 70, 70);
+    width: 2em;
+    padding: 1em;
+    aspect-ratio: 1 / 1;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.Playback > img:not(.CoverImage):hover {
+    background-color: rgb(80, 80, 80);
+}
+
+.Playback > .Tooltips {
+    position: absolute;
+    left: 50%;
+    top: -4em;
+    transform: translateX(-50%);
+
+    width: 15%;
+}
+
+.Playback > .Tooltips > span {
+    padding: 8px;
+    background-color: rgb(50, 50, 50);
+    border-radius: 8px;
+}
+
+.Playback > .Tooltips > span:first-child {
+    position: absolute;
+    left: -1em;
+}
+
+.Playback > .Tooltips > span:not(:first-child):not(:last-child) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Playback > .Tooltips > span:last-child {
+    position: absolute;
+    right: 0;
+}
+
+.Playback > .Play {
+    position: relative;
+    width: 4em;
+
+    border-radius: 8px;
+}
+
+.Playback > .Bar {
+    position: absolute;
+    top: -1em;
+    left: 0;
+    width: 100%;
+    height: 1em;
+    background-color: rgb(50, 50, 50);
+}
+
+.Playback > .Bar > .Fill {
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+
+    font-size: 1em;
+
+    background-color: rgb(90, 90, 90);
+    transition: none;
+}
+
+.Playback > .Bar > .Fill > span {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.Playback > .Bar > .Fill > span:first-child {
+    position: absolute;
+    left: 8px;
+}
+
+.Playback > .Bar > .Fill > span:last-child {
+    position: absolute;
+    right: 8px;
+}
+
+.Playback > .Data {
+    position: absolute;
+    left: 1em;
+
+    display: flex;
+
+    background-color: rgb(70, 70, 70);
+    width: 4em;
+    padding: 1em;
+    aspect-ratio: 1 / 1;
+    
+    border-radius: 8px;
+}
+
+.Playback > .Data > img {
+    padding: 0;
+    border-radius: 8px;
+}
+
+.Playback > .Data > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+    left: 2em;
+}
+
+.Playback > .Data > div > *:last-child {
+    opacity: 0.25;
+    cursor: pointer;
+}
+
+.Playback > .Data > div > *:last-child:hover {
+    text-decoration: underline;
+}
+
+.Playback > .Control {
+    position: absolute;
+    right: 1em;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    background-color: rgb(70, 70, 70);
+    width: auto;
+    max-height: 2em;
+    padding: 1em;
+    
+    border-radius: 8px;
+}
+
+.Playback > .Control > img {
+    height: 2em;
+}
+
+.Playback > .Control > .FullscreenButton {
+    margin-left: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.Playback > .Control > .FullscreenButton:hover {
+    background-color: rgb(90, 90, 90);
+}
+
+.AccountForm {
+    position: absolute;
+    top: calc(50% - 7.5em + 2em);
+    width: 95%;
+    transform: translateY(-50%);
+    gap: 2px;
+}
+
+.AccountForm > * {
+    outline: none;
+    border: none;
+    padding: 16px;
+    font-weight: 600;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.AccountForm > button {
+    cursor: pointer;
+}
+
+.CoverInput {
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 3em);
+    width: 25%;
+    transform: translate(-50%, -50%);
+    aspect-ratio: 1 / 1;
+    background-color: rgb(60, 60, 60);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.CoverInput > div {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1em;
+    aspect-ratio: 1 / 1;
+    width: 22px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(90, 90, 90);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.CoverInput > input {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgb(80, 80, 80);
+    cursor: pointer;
+}
+
+.CoverInput > img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .Playback > *:not(.Data) {
+        position: relative;
+        right: 4em;
+    }
+
+    .AccountForm {
+        width: 82%;
+    }
+
+    .Playback > .Control > img {
+        display: none;
+    }
+}
